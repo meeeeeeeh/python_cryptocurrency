@@ -1,0 +1,13 @@
+asgiref==3.5.1
+backports.zoneinfo==0.2.1
+beautifulsoup4==4.11.1
+bitcoin==1.1.42
+certifi==2021.10.8
+charset-normalizer==2.0.12
+Django==4.0.4
+idna==3.3
+python-decouple==3.6
+requests==2.27.1
+soupsieve==2.3.2.post1
+sqlparse==0.4.2
+urllib3==1.26.9

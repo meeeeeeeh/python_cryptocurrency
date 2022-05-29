@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{%block content%}
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline is-mobile">
+            {% for el in a %}
+            <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="{{el.href}}" style="text-decoration:none; color:black;">
+                            <figure class="image is-4by2">
+                            <img src="{{el.image}}" alt="Placeholder image">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <a href="{{el.href}}" style="text-decoration:none; color:black;">{{el.title}}</a>
+                    <p style="color:gray;">{{el.description}}</p>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</section>
+{%endblock%}

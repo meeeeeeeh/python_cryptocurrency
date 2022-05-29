@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero is-success is-fullheight">
+<div class="hero-body">
+<div class="container">
+<div class="columns is-centered">
+<form method="post" action="" class="box">
+  {%csrf_token%}
+<div class="field">
+  <label class="label">Имя пользователя</label>
+  <div class="control">
+    {{form.username}}
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Пароль</label>
+  <div class="control has-icons-left">
+    {{form.password}}
+    <span class="icon is-small is-left">
+      <i class="fa fa-lock"></i>
+    </span>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+     <span class="color: red; font-weight: bold;">{{ form.errors }}</span>
+  </div>
+</div>
+
+<div class="field">
+  <p class="control">
+    <button type="submit" name="action" class="button is-success">
+    Войти
+    </button>
+  </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+{% endblock content %}
